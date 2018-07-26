@@ -4,7 +4,10 @@
 }
 
 html {
-    background-color: black;
+    background-image: radial-gradient(
+        #422309,
+        black
+    );
 }
 
 
@@ -14,57 +17,38 @@ html {
 }
 
 body {
-    /*padding-left: 100px;*/
-    /*remove later*/
-    /*padding-right: 100px;*/
-    /*remove later*/
-    /* margin: 50px;
-    padding: 50px; */
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
 }
-/*ff8100*/
-body, textarea {
-    /* background: #190c01; */
-    /* background-image: linear-gradient(to right, black, #190c01 400px, black 800px);
-    background-size: 800px 100%;
-    background-position: 50% 100%;
-    background-repeat: no-repeat; */
-    background-image: radial-gradient(
-        #422309,
-        black
-    );
+
+body, input {
+    
     color: #fefe22;
-    /* filter: brightness(120%); */
     animation: glow 2.5s linear infinite;
-    /* animation: glow 2.5s linear infinite; */
-    /* text-transform: uppercase; */
-    /* font-family: 'Courier New'; */
     font-family: 'Terminus(TTF)';
-    /* font-weight: 700; */
     font-size: 21px;
     overflow: hidden;
 }
 
-textarea {
+input {
+    padding: 0;
     border: none;
     width: 95%;
     resize: none;
     overflow: auto;
-    margin-bottom: 20px;
     overflow-y: hidden;
     display: inline;
     background: transparent;
-    height: 300px;
+    /* height: 300px; */
 }
 
-textarea:focus {
+input:focus {
     outline: 0;
 }
 
-p, textarea {
+p, input {
     animation: glow 2.5s linear infinite;
     text-shadow: 3px -3px 15px #fefe22cc, 0px 0px 3px #fefe22a1;
 }
@@ -75,30 +59,11 @@ p, textarea {
     100% { filter: brightness(100%);}
 }
 
-/* .glowInMid {
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #ffffffbf;
-  box-shadow:
-    0 0 60px 30px #ffffffbf,
-    0 0 100px 60px #a2a2a2,
-    0 0 140px 90px #e6e6e6;
-} */
-
 .container {
-    /* margin: 50px;
-    padding: 50px; */
-    
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    /* padding: 50px; */
-
 }
 
 .overlay {
@@ -112,7 +77,7 @@ p, textarea {
 }
 
 .glitch {
-    /* animation: glitch 0.35s infinite; */
+    animation: glitch 0.35s infinite;
 }
 
 .line {
